@@ -1,68 +1,104 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+/* Show the episodes list when the button is clicked */
+.episodes-list {
+  display: none;
+  padding: 10px;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+/* Add a class to show the episodes list */
+.show-episodes {
+  display: block !important;
 }
 
-body {
-  margin: 0;
+
+/* Home styling */
+
+.home-container {
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  flex-direction: column;
+  align-items: flex-start;
+  /* Move content to the left */
+  padding: 20px;
+
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.search-sort-container {
+  /* Move sort buttons to the right */
+  display: flex;
+  justify-content: flex-end;
+  /* Move sort buttons to the right */
+  margin-bottom: 20px;
+  margin: auto;
+  width: 50%;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-right: 10px;
+  border: 5px double rgb(163, 139, 0);
+  border-radius: 20px;
+  border-right: none;
+  border-left: none;
+}
+
+select {
+  padding: 10px;
+  border: 5px double rgb(163, 139, 0);
+  border-radius: 20px;
+  border-left: none;
+  border-right: none;
+}
+
+.show-list {
+  list-style-type: none;
+  padding: 0;
+
+}
+
+.show-info {
+  display: flex;
+  margin-bottom: 20px;
+  border: none;
+  padding: 10px;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.show-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.show-details {
+  flex: 1;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.favorite-container {
+  background-color: #a05858d7;
+  color: aqua;
+}
+
+.genres-container {
+  position: relative;
+  top: -20px;
+  margin: auto;
+  width: 50%;
+  font-family: 'papyrus';
+}
+
+.history-container {
+
+  margin-top: 0;
+  color: #000000;
+  background-image: linear-gradient(red, gold);
+  padding: 50px;
+}
+
+.history-container p {
+
+  color: #070066;
 }
